@@ -23,11 +23,10 @@ class GeminiClient:
 
         # Primary model and fallback model
         self.models = [
-            "gemini-3.8-flash",
-            "gemini-2.5-flash"
+            "gemini-3.8-flash"
         ]
 
-        self.max_retries = 3
+        self.max_retries = 5
 
     def _generate_with_retry(self, model, prompt, image_url):
 
