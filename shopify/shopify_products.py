@@ -12,7 +12,7 @@ class ProductCreatedButIncomplete(Exception):
 
 def create_draft_product(client, product_data):
     """
-    Create one Shopify Draft product with an image and manual price.
+    Create one Shopify Draft product with an image and validated selling price.
 
     Required:
         title, description, price, image_url
